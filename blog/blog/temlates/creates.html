@@ -1,0 +1,21 @@
+{% extends 'blok/layouts.html' %}
+{% block title %} Создать категорию  {% endblock %}
+
+
+{% block content %}
+
+
+
+
+<h1 style="color: #fff;">Создать категорию</h1>
+
+    <form style="color: white" action="/category/creates/" method="POST">
+    {% csrf_token %}
+    {{ form1.as_p }}
+    <button type="submit">KO</button>
+    </form>
+
+
+
+
+{% endblock %}
