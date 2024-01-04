@@ -12,6 +12,7 @@ from blog.views import (main_view , current_date_view , goodbye_view,ProductView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('products.urls')),
     path('', main_view, name='main'),
     path('current_date/',current_date_view),
     path('goodbye/',goodbye_view),
